@@ -1,6 +1,6 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Exam Counter for students to see if they passed or failed an exam
+// Author: Isabella Ginnold
+// Date: April 20,2023
 
 // Constants
 
