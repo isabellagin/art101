@@ -23,7 +23,7 @@ function sortUserName() {
     
 }
 //output
-document.writeln("Oh hey, I fixed your name: Isabella",
+document.writeln("Oh hey, I fixed your name:",
 sortUserName(), "</br>");
 
 
