@@ -15,10 +15,10 @@ console.log("My Array", array);
 
 var result = array.map(isEven);
 //this should retun [true, false, true, true, true, true, true]
-console.log("Test of evenness of array:", results);
+console.log("Test of evenness of array:", result);
 
-var result = array.map( function(x){
+var result = array.map(function(x){
     return x ** 0.5;
 })
 //should return (10, 9, 2, 4, 6.4807069840786, 12, 100)
-console.log("Squareroot of array:", results);
+console.log("Squareroot of array:", result);
