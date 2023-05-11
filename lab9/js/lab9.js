@@ -10,7 +10,6 @@
   const outputEl = document.getElementById("output");
   //outputEl.innerHTML = "p"; TESTING
 
-
   const newIEl = document.createElement("p");
   new1El.innerHTML = "Why don't we all just eat Vegan ice cream and enjoy the show";
 
@@ -18,7 +17,15 @@
   const new2El = document.createElement("p");
   new2El.innerHTML = "But what if I don't care if I'm lactosee intollerant?"
 
+  //append both new elemenrs one at a time
   outputEl.appendChild(new1El);
   outputEl.appendChild(new2El);
 
-  function myFunction(param1, param2)
+  function myFunction(param1, param2) {
+
+
+  }
+  
+  function main () {
+    console.log ("Main function started.");
+  }
