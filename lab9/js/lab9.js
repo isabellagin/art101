@@ -15,7 +15,7 @@
 
 
   const new2El = document.createElement("p");
-  new2El.innerHTML = "But what if I don't care if I'm lactosee intollerant?"
+  new2El.innerHTML = "But what if I don't care if I'm lactosee intollerant?";
 
   //append both new elemenrs one at a time
   outputEl.appendChild(new1El);
