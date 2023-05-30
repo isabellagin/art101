@@ -1,3 +1,8 @@
+/* we can use a single css file to style all the files in our wwebsite */
+
+/* you can pick your own background colors, text colors, and fonts */
+
+/* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
     background-color: #d0b1c7;
   }
@@ -15,11 +20,11 @@ body {
   }
   
   /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
-  .content {
+  #content {
     margin: 10px;
     padding: 10px;
     border: solid 1px #888888;
-    background-color: #ca84dc;
+    background-color: #c570db;
   }
   
   /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
