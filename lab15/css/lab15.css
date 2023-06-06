@@ -1,6 +1,26 @@
-.minor-section {
+.main {
     padding: 10px;
     margin-bottom: 10px;
     border: solid 1px #ffffff;
     background-color: #f289db;
+  }
+  /* CSS Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .answer-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 400px;
+  }
+  
+  .answer-text {
+    text-align: center;
   }

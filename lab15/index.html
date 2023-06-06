@@ -1,8 +1,8 @@
 <head>
     <title>Lab 15</title>
     <script src="js/lab15.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
+    <script src="css/lab15.css" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <main id="content">
     <section>
@@ -26,6 +26,47 @@
                 <h2>Results</h2>
                 <div id="output"></div>
                 <button id="activate">
+                    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+</head>
+
+<body>
+  <h1>API Test Page</h1>
+  <div id="answer-container">
+    <img id="answer-image" class="answer-image" src="" alt="Answer Image">
+    <p id="answer-text" class="answer-text"></p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // JavaScript Code
+    $.ajax({
+      url: '/api',
+      data: {
+        force: 'yes'
+      },
+      type: 'GET',
+      dataType: 'json',
+      success: function(data) {
+        const answer = data.answer;
+        const image = data.image;
+        
+        document.getElementById('answer-image').src = image;
+        document.getElementById('answer-text').textContent = `Answer: ${answer}`;
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        console.log('Error:', textStatus, errorThrown);
+      }
+    });
+  </script>
+</body>
+
+</html>
+
             
         </div>
     </section>
