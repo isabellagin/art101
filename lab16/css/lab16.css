@@ -1,0 +1,31 @@
+body {
+    background-color: #d0b1c7;
+  }
+  
+  /* we can have rules apply to multiple elements at the same time with commas */
+  h1,h2,h3 {
+    font-family: sans-serif;
+  }
+  
+  /* and we can have rules that overlap other rules, both take effect */
+  h1,h2 {
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    font-size: 200%;
+  }
+  
+  /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
+  #content h1,h2{
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px #888888;
+    background-color: #c570db;
+  }
+  
+  /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+  .minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #c570db;
+  }
