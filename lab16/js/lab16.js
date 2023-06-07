@@ -12,26 +12,30 @@ function make_safe(str)
 {
     return str.replace(/'/g);
 }
-// sortUserName- a function that takes user input and sorts the letters
-    // of their name
-    function sortUserName() {
-        var userName = window.prompt("Hi. Please tell me your name so I can fix it.");
-        console.log("username =", userName);
-        //split string to array
-        var NameArray = userName.split('');
-        console.log("nameArray =", NameArray);
-        //sort array
-        var nameArraySort = NameArray.sort();
-        console.log("nameArraySort =", nameArraySort);
-        //join array back to the string
-        var nameSorted = nameArraySort.join ('');
-        console.log("nameSorted=", nameSorted);
-        return nameSorted;
-        
-    }
-    //output
-    document.writeln("Oh hey, I fixed your name:",
-    sortUserName(), "</br>");
+// Define the endpoint URL
+const endpointUrl = 'https://xkcd.com/json.html';
+
+// Define the request configuration
+const requestOptions = {
+  method: 'GET',
+};
+
+// Send the API request
+fetch(endpointUrl, requestOptions)
+  .then(response => response.json()) // Parse the response as JSON
+  .then(data => {
+    // Process the response data
+    console.log('Response:', data);
+    const answer = data.answer;
+    const image = data.image;
+    // ... do something with the answer and image ...
+  })
+  .catch(error => {
+    // Handle any errors
+    console.error('Error:', error);
+  });
+
+
     
     
     
